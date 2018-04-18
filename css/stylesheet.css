@@ -1,0 +1,116 @@
+div {
+	font-family: Verdana, Geneva, sans-serif;
+	
+}
+body {
+	background-color:#b8dbd3;
+	margin:30px;
+	border: 10px solid #68c4af;
+}
+h1{
+	margin-left: 10px;
+	text-align:center;
+}
+nav{
+	text-align: center;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.Hobbies {
+	float : right;
+	border: 10px solid #68c4af;
+}
+.TV{
+	float : left;
+	
+	padding-right:130px;
+	border: 10px solid #68c4af;
+}
+#IOT{
+	padding-bottom: 20px;
+}
+ul{
+	margin-left:20px;
+	margin-right:20px;
+	padding-top:20px;
+	
+}
+ol{
+	margin-left:20px;
+	margin-right:20px;
+	padding-top:20px;
+	border-top: 2px solid black;
+	
+}
+h3{
+	text-align:center;
+}
+p{
+	margin: 0 20px 0 20px;
+}
+footer{
+	float:left;
+	margin-top: 50px;
+	margin-bottom:10px;
+}
+h4{
+	margin-left:10px;
+}
+#page1 hr{
+	color:black;
+}
+#page1 ul{
+	margin-left:20px;
+	margin-right:20px;
+	padding-top:20px;	
+	border-top: 2px solid black;
+}
+#page2 ul{
+	margin-left:20px;
+	margin-right:20px;
+	padding-top:20px;
+	border-top: 2px solid black;
+}
+
+#page2 h3{
+	margin-top:30px;
+	text-align:center;
+}
+#page2 #introP{
+	text-align:center;
+}
+#page2 #linkP{
+	margin-top:30px;
+	margin-bottom:10px;
+}
+#page2 #link{
+	margin-top:30px;
+	margin-bottom:10px;	
+}
+#page3 #information{
+	margin-bottom:20px;
+	text-align:center;
+}
+#page3 #iit{
+	border-top: 1px solid black;
+	padding-top:20px;
+}
+#page3 #daley{
+	margin-top:30px;
+	border-top: 1px solid black;
+	padding-top:20px;
+}
+#page3 #metra{
+	border-top: 1px solid black;
+	padding-top:20px;
+}
+#page3 #ups{
+	margin-top:30px;
+	border-top: 1px solid black;
+	padding-top:20px;
+}
+#page3 #skillid{
+	border-top: 1px solid black;
+	padding-top:20px;
+}
+
