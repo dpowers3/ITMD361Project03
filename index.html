@@ -5,6 +5,7 @@
 		<title>Home Page</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/stylesheet.css">
+		<script src="slider_script.js"></script>
 		<script>
 			function openCity(evt, cityName) {
 			var i, tabcontent, tablinks;
@@ -92,6 +93,7 @@
 			<button class="tablinks" onclick="openCity(event, 'Hobbies')">Hobbies</button>
 			<button class="tablinks" onclick="openCity(event, 'Television')">Television Shows</button>
 			<button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
+			<button class="tablinks" onclick="openCity(event, 'Picture')">Required Picture Display That is Required</button>
 		</div>
 		<div id="Hobbies" class="tabcontent">
 		<ul>
@@ -126,6 +128,32 @@
 			<li>The Clash</li>
 		</ul>
 		</div>
+		<div id="Picture" class="tabcontent">
+			<img class="mySlides" src="images/spidermanmeme1.jpg" >
+			<img class="mySlides" src="images/spidermanmeme2.jpg" >
+			<img class="mySlides" src="images/spidermanmeme3.jpg" >
+			<img class="mySlides" src="images/spidermanmeme4.jpg" >
+			<img class="mySlides" src="images/spidermanmeme5.jpg" >
+			<img class="mySlides" src="images/spidermanmeme6.jpg" >
+			
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+				myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 5000); 
+}
+		</script>
+
 		<footer>
 			<p>Created by David Powers</p>
 			<p>Contact Information: <a href="mailto:dpowers@hawk.iit.edu">dpowers@hawk.iit.edu</a></p>
