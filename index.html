@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-  <html> 
+<html> 
     <head>
-      <meta charset="utf-8">
-      <title>Home Page</title>
-	  <link rel="stylesheet" href="css/normalize.css">
-	  <link rel="stylesheet" href="css/stylesheet.css">
-	  <script>
-		function openCity(evt, cityName) {
-		var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		}
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		document.getElementById(cityName).style.display = "block";
-		evt.currentTarget.className += " active";
-		}
+		<meta charset="utf-8">
+		<title>Home Page</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<script>
+			function openCity(evt, cityName) {
+			var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+			}
 		</script>
     </head>
-  <body id="page1">
-	<div class="myDiv">
-      
-      <nav>
-        <a href="index.html" target="_self">Home</a> |
-        <a href="resume.html" target="_self">Resume</a> |
-        <a href="recipes.html" target="_self">My Favorite Recipes</a>
-      </nav>
-	  <hr/>
-	  <h1>Greetings!</h1>
-      <section>
-        <h3>Welcome to David's website</h3>
-        <p>
+	<body id="page1">
+		<div class="myDiv">  
+		<nav>
+			<a href="index.html" target="_self">Home</a> |
+			<a href="resume.html" target="_self">Resume</a> |
+			<a href="recipes.html" target="_self">My Favorite Recipes</a>
+		</nav>
+		<hr/>
+		<h1>Greetings!</h1>
+		<section>
+		<h3>Welcome to David's website</h3>
+		<p>
 			Hello. My name is David Powers. I'm just a 25 year old guy just hoping to make it through this semester with my sanity intact. Since I'm also 
 			a senior and I'm planning to graduate this May, who knows if that happens. Since this is the third redition of this website I decided to change the
 			opening, since who knows what i was thinking when I first made this and got bored with it. However, changing this is all part of my master plan.
@@ -70,78 +69,67 @@
 		<p id="enjoy"> Enjoy!</p>
 		<video id="Project3" width="400" style="display:none;" autoplay muted >
 			<source src="images/EducationVideo.mp4" type="video/mp4">
-  		</video>
+		</video>
 		<audio id="audio" style="display:none;" controls autoplay>
-			
 			<source src="images/victorysong.mp3" type="audio/mpeg">
 		</audio>
-      <script>
-	  function myFunction(){ 
-        var pic = "images/NotWhatItLooksLike.gif"
-		var audio = document.getElementById("audio");
-
-        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
-        document.getElementById('bigpic').style.display='block';
-		document.getElementById('enjoy').style.display='block';
-		document.getElementById('Project3').style.display='block';
-		document.getElementById('audio').style.display='block';
-		audio.play();
-        }
-		
-	  </script>
-      </section>
-	<h3>Now Here are a few of my favorite things</h3>
-	<div class="tab">
-		<button class="tablinks" onclick="openCity(event, 'Hobbies')">Hobbies</button>
-		<button class="tablinks" onclick="openCity(event, 'Television')">Television Shows</button>
-		<button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
-	</div>
-
-	<div id="Hobbies" class="tabcontent">
-		
-        <ul>
-          <li>Taking apart computers and putting them back together again</li>
-          <li>Playing video games</li>
-          <li>Reading classic literature (My favorite is the Lord of The Rings)</li>
-          <li>Cooking. I have a link to two of my favorite Recipes above or right<a href="Recipes.html" target="_self"> here</a></li>
-          <li>Watching good television programs. Below is a list of a few of my favorites.</li>
-          <li>Listening to podcasts</li>
-          <li>Hangout with friends</li>
-        </ul>
-	</div>
-
-	<div id="Television" class="tabcontent">
-		
-          <ul>
-            <li>Game of Thrones</li>
-            <li>Cowboy Bebop</li>
-            <li>Daredevil</li>
-            <li>Doctor Who</li>
-            <li>Westworld</li>
-            <li>Rick and Morty</li>
-            <li>Fullmetal Alchemist: Brotherhood</li>
-          </ul>
-	</div>
-
-	<div id="Music" class="tabcontent">
-		
-          <ul>
-            <li>Led Zeppelin</li>
-            <li>Rise Against</li>
-            <li>Weezer</li>
-            <li>Green Day</li>
-            <li>Muse</li>
-            <li>Bruce Springsteen</li>
-            <li>The Clash</li>
-          </ul>
-	</div>
- 
-
-
-      <footer>
-        <p>Created by David Powers</p>
-        <p>Contact Information: <a href="mailto:dpowers@hawk.iit.edu">dpowers@hawk.iit.edu</a></p>
-      </footer>		
-  </div>
-  </body>
+		<script>
+			function myFunction(){ 
+			var pic = "images/NotWhatItLooksLike.gif"
+			var audio = document.getElementById("audio");
+			
+			document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+			document.getElementById('bigpic').style.display='block';
+			document.getElementById('enjoy').style.display='block';
+			document.getElementById('Project3').style.display='block';
+			document.getElementById('audio').style.display='block';
+			audio.play();
+			}
+		</script>
+		</section>
+		<h3>Now Here are a few of my favorite things</h3>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Hobbies')">Hobbies</button>
+			<button class="tablinks" onclick="openCity(event, 'Television')">Television Shows</button>
+			<button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
+		</div>
+		<div id="Hobbies" class="tabcontent">
+		<ul>
+			<li>Taking apart computers and putting them back together again</li>
+			<li>Playing video games</li>
+			<li>Reading classic literature (My favorite is the Lord of The Rings)</li>
+			<li>Cooking. I have a link to two of my favorite Recipes above or right<a href="Recipes.html" target="_self"> here</a></li>
+			<li>Watching good television programs. Below is a list of a few of my favorites.</li>
+			<li>Listening to podcasts</li>
+			<li>Hangout with friends</li>
+		</ul>
+		</div>
+		<div id="Television" class="tabcontent">
+		<ul>
+			<li>Game of Thrones</li>
+			<li>Cowboy Bebop</li>
+			<li>Daredevil</li>
+			<li>Doctor Who</li>
+			<li>Westworld</li>
+			<li>Rick and Morty</li>
+			<li>Fullmetal Alchemist: Brotherhood</li>
+		</ul>
+		</div>
+		<div id="Music" class="tabcontent">
+		<ul>
+			<li>Led Zeppelin</li>
+			<li>Rise Against</li>
+			<li>Weezer</li>
+			<li>Green Day</li>
+			<li>Muse</li>
+			<li>Bruce Springsteen</li>
+			<li>The Clash</li>
+		</ul>
+		</div>
+		<footer>
+			<p>Created by David Powers</p>
+			<p>Contact Information: <a href="mailto:dpowers@hawk.iit.edu">dpowers@hawk.iit.edu</a></p>
+		</footer>		
+		</div>
+	</body>
 </html>
