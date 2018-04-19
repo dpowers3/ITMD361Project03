@@ -5,6 +5,21 @@
       <title>Home Page</title>
 	  <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/stylesheet.css">
+	  <script>
+		function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+		</script>
     </head>
   <body id="page1">
 	<div class="myDiv">
@@ -18,22 +33,72 @@
 	  <h1>Greetings!</h1>
       <section>
         <h3>Welcome to David's website</h3>
-        <p>Hello. My name is David Powers , and this is my first real website that i created.I am 25 years old and is a senior in the 
-          ITM program. I'm planning to graduate this May, provided I pass all my classes. Throughout my time here at IIT, i have learned or worked with these
-          programming languages:</p>
-        <ul>
-          <li>Java</li>
-          <li>C++</li>
-          <li>C#</li>
-          <li>Bash (AWK and Perl included)</li>
-          <li>PowerShell</li>
-          <li>HTML and CSS (though its only this semester)</li>
-        </ul>
-        <p id="IOT">Finally what i aspire to do with my Bachlors degree is to work in server administration or in the field of IoT devices. </p>
+        <p>
+			Hello. My name is David Powers. I'm just a 25 year old guy just hoping to make it through this semester with my sanity intact. Since I'm also 
+			a senior and I'm planning to graduate this May, who knows if that happens. Since this is the third redition of this website I decided to change the
+			opening, since who knows what i was thinking when I first made this and got bored with it. However, changing this is all part of my master plan.
+			Now.. I know what you might be thinking:
+		</p>
+		<ul>
+			<li>Why are you making this assignment needlessly complicated?</li>
+			<li>Master plan? What are you a James Bond villan? (Best one is Goldfinger in my "expert" opinion)</li>
+			<li>This is ridiculious I'm just here to grade your work (Shout-out to the Professor)</li>
+			<li>Oh... well this is interesting. Go on...</li>
+		</ul>
+		<p>
+			Well thank you for being interested dear reader, I shall carry on. Now my master plan , which I have dubbed "Project3", comes in 5 steps. Now
+			i know what you must be thinking, either "what steps could I take that and be so confident on the out that no one could possibly comprehend????", or 
+			"I've had enough **click Resume page**"
+		</p>
+		<p>
+			Well lucky for you(person who thought the former)... Here are the steps already planned out: 
+		</p>
+		<ol>
+			<li>Take Fund of Web Design Class</li>
+			<li>Make it through entire semester like a boss (kind of...)</li>
+			<li>Make and eat a sandwich</li>
+			<li>???????????</li>
+			<li>Realize you needed 2 more steps</li>
+			<li>??????????? and ???????????</li>
+			<li>Sit back and watch plan "Project3" come to fruition</li>
+		</ol>
+		<p>
+			There you have it. My <strong>master</strong> plan. Now hold up... What about steps 4 and 6? Ahh. Glad you caught on to that valued reader. Don't worry...
+			click <button onclick="myFunction()">Here</button> and they will be revealed.
+		</p>
+		<img id="bigpic" src="bigpic" style="display:none;" />
+		<p id="enjoy"> Enjoy!</p>
+		<video id="Project3" width="400" style="display:none;" autoplay muted >
+			<source src="images/EducationVideo.mp4" type="video/mp4">
+  		</video>
+		<audio id="audio" style="display:none;" controls autoplay>
+			
+			<source src="images/victorysong.mp3" type="audio/mpeg">
+		</audio>
+      <script>
+	  function myFunction(){ 
+        var pic = "images/NotWhatItLooksLike.gif"
+		var audio = document.getElementById("audio");
+
+        document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
+        document.getElementById('bigpic').style.display='block';
+		document.getElementById('enjoy').style.display='block';
+		document.getElementById('Project3').style.display='block';
+		document.getElementById('audio').style.display='block';
+		audio.play();
+        }
+		
+	  </script>
       </section>
-	 
-      <section class="Hobbies">
-        <h3>Hobbies</h3>
+	<h3>Now Here are a few of my favorite things</h3>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, 'Hobbies')">Hobbies</button>
+		<button class="tablinks" onclick="openCity(event, 'Television')">Television Shows</button>
+		<button class="tablinks" onclick="openCity(event, 'Music')">Music</button>
+	</div>
+
+	<div id="Hobbies" class="tabcontent">
+		
         <ul>
           <li>Taking apart computers and putting them back together again</li>
           <li>Playing video games</li>
@@ -43,10 +108,10 @@
           <li>Listening to podcasts</li>
           <li>Hangout with friends</li>
         </ul>
-      </section>
-	  
-      <section class ="TV">
-        <h3>Favorite Television Shows</h3>
+	</div>
+
+	<div id="Television" class="tabcontent">
+		
           <ul>
             <li>Game of Thrones</li>
             <li>Cowboy Bebop</li>
@@ -56,8 +121,23 @@
             <li>Rick and Morty</li>
             <li>Fullmetal Alchemist: Brotherhood</li>
           </ul>
-      </section>
-	  
+	</div>
+
+	<div id="Music" class="tabcontent">
+		
+          <ul>
+            <li>Led Zeppelin</li>
+            <li>Rise Against</li>
+            <li>Weezer</li>
+            <li>Green Day</li>
+            <li>Muse</li>
+            <li>Bruce Springsteen</li>
+            <li>The Clash</li>
+          </ul>
+	</div>
+ 
+
+
       <footer>
         <p>Created by David Powers</p>
         <p>Contact Information: <a href="mailto:dpowers@hawk.iit.edu">dpowers@hawk.iit.edu</a></p>
